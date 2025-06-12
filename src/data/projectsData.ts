@@ -69,7 +69,7 @@ export const projectsData: IProject[] = [
     description: 'Design and simulate large scale networks using Cisco Packet Tracer',
     tags: ['Cisco Packet Tracer'],
     image: '/images/projects/Jarkom.png', 
-    date: 'Oktober 2023'
+    date: 'December 2023'
   },
   {
     title: 'Smart Traffic Light',

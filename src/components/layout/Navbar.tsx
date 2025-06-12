@@ -37,7 +37,6 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
-      {/* Scroll Progress Bar */}
       <motion.div 
         className="h-1 bg-cyan-400 origin-left"
         style={{ scaleX: scrollProgress / 100 }}
