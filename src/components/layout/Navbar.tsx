@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useScrollProgress } from '../../hooks/Scroll'; 
-import { motion } from 'framer-motion';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -11,7 +9,6 @@ const navLinks = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const scrollProgress = useScrollProgress(); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/80 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/80 shadow-lg' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="text-2xl font-bold text-white">
           Irfan<span className="text-cyan-400"></span>
@@ -37,10 +34,6 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
-      <motion.div 
-        className="h-1 bg-cyan-400 origin-left"
-        style={{ scaleX: scrollProgress / 100 }}
-      />
     </header>
   );
 };
