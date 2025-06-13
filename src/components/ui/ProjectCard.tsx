@@ -1,24 +1,33 @@
-import { FaGithub, FaUserTie } from 'react-icons/fa'; 
+import { FaGithub, FaUserTie } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import type { IProject } from '../../data/projectsData';
 
-const ProjectCard = ({ project }: { project: IProject }) => {
+interface ProjectCardProps {
+  project: IProject;
+}
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden h-full flex flex-col
                     transition-all duration-300 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-900/20">
       <div className="aspect-w-16 aspect-h-9">
-        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className="w-full h-full object-cover" 
+          loading="lazy"
+        />
       </div>
       
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-gray-100 mb-2">{project.title}</h3>
+        
         {project.role && (
           <div className="flex items-center gap-2 mb-3 text-cyan-400">
-            <FaUserTie size={16} /> {/* Ikon untuk peran */}
+            <FaUserTie size={16} /> 
             <p className="text-sm font-semibold">{project.role}</p>
           </div>
         )}
-
 
         <p className="text-gray-400 mb-4 text-sm leading-relaxed flex-grow">{project.description}</p>
         
