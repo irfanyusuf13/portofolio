@@ -7,3 +7,23 @@ body {
   @apply bg-gray-900 text-gray-100;
   font-family: 'Inter', sans-serif; 
 }
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #4b5563; 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #22d3ee !important; 
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: #22d3ee; 
+}
+
+.active {
+  color: #22d3ee !important; /* Warna cyan-400 */
+}

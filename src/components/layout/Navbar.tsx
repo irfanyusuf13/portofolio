@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+
 
 const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#contact', label: 'Contact' },
+  { to: 'home', label: 'Home' },
+  { to: 'projects', label: 'Projects' },
+  { to: 'experience', label: 'Experiences' },
+  { to: 'contact', label: 'Contact' },
 ];
 
 const Navbar = () => {
@@ -21,15 +23,28 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/80 shadow-lg' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-bold text-white">
-          Irfan<span className="text-cyan-400"></span>
-        </a>
+        <Link 
+          to="home" 
+          smooth={true} 
+          duration={500} 
+          className="text-2xl font-bold text-white cursor-pointer"
+        >
+          Irfan
+        </Link>
         <ul className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} className="text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+            <li key={link.to}>
+              <Link
+                activeClass="active" 
+                to={link.to}         
+                spy={true}           
+                smooth={true}       
+                duration={500}       
+                offset={-70}         
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"
+              >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
