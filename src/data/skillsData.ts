@@ -1,7 +1,7 @@
 import { FaCode, FaServer, FaMicrochip, FaNetworkWired, FaTools, FaJava, FaMobile} from 'react-icons/fa';
 import {SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiExpress, 
     SiPostgresql, SiMongodb, SiCplusplus, SiGnu, SiGithub, 
-    SiPython, SiGit, SiAssemblyscript, SiPostman, SiDocker, SiTailwindcss, SiAndroidstudio} from 'react-icons/si';
+    SiPython, SiGit, SiAssemblyscript, SiPostman, SiDocker, SiTailwindcss, SiAndroidstudio, SiNextdotjs} from 'react-icons/si';
 
 
 export interface ISkill {
@@ -39,6 +39,7 @@ export const skillsData: ICategory[] = [
       { name: "Node.js", icon: SiNodedotjs, level: 3 },
       { name: "Express.js", icon: SiExpress, level: 3 },
       { name: "PostgreSQL", icon: SiPostgresql, level: 3 },
+      { name: "Next.js", icon: SiNextdotjs, level: 2 },
       { name: "MongoDB", icon: SiMongodb, level: 2 },
     ]
   },
