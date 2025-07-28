@@ -60,7 +60,7 @@ export const skillsData: ICategory[] = [
     ]
   },
   {
-    name: "Tools & DevOps",
+    name: "Tools",
     icon: FaTools,
     skills: [
       { name: "Git", icon: SiGit, level: 4 },
