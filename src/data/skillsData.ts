@@ -21,11 +21,11 @@ export const skillsData: ICategory[] = [
     name: "Programming Languages",
     icon: FaCode,
     skills: [
-      { name: "Python", icon: SiPython, level: 3 },
-      { name: "JavaScript", icon: SiJavascript, level: 3 },
+      { name: "Python", icon: SiPython, level: 4 },
+      { name: "JavaScript", icon: SiJavascript, level: 4 },
       { name: "Java", icon: FaJava, level: 3 },
       { name: "C / C++", icon: SiCplusplus, level: 3 },
-      { name: "TypeScript", icon: SiTypescript, level: 2 },
+      { name: "TypeScript", icon: SiTypescript, level: 3 },
       { name: "VHDL", icon: FaMicrochip, level: 2 },
       { name: "Assembly", icon: SiAssemblyscript, level: 2 },
     ]
@@ -39,7 +39,7 @@ export const skillsData: ICategory[] = [
       { name: "Node.js", icon: SiNodedotjs, level: 3 },
       { name: "Express.js", icon: SiExpress, level: 3 },
       { name: "PostgreSQL", icon: SiPostgresql, level: 3 },
-      { name: "Next.js", icon: SiNextdotjs, level: 2 },
+      { name: "Next.js", icon: SiNextdotjs, level: 3 },
       { name: "MongoDB", icon: SiMongodb, level: 2 },
     ]
   },

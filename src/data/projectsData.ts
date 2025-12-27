@@ -2,7 +2,7 @@ export interface IProject {
   title: string;
   description: string;
   tags: string[];
-  image: string;
+  image?: string;
   githubUrl?: string; 
   liveUrl?: string;
   role?: string; 
@@ -11,6 +11,26 @@ export interface IProject {
 
 
 export const projectsData: IProject[] = [
+  {
+    title: 'Smart Vending Machine',
+    description: 'A Smart Vending machine for MBG',
+    tags: ['Node.js','React.js','Prisma', 'C++', 'ESP32'],
+    image: '/images/projects/Vendingmachine.webp', 
+    githubUrl: 'https://github.com/irfanyusuf13/despro-hardware',
+    role: 'Hardware Developer',
+    date: 'December 2025'
+  },
+
+  {
+    title: 'SoundLedger',
+    description: 'A Blockchain-Based Solution for Music Copyright Protection',
+    tags: ['Ethereum','Solidity','React.js','Tailwind CSS', 'IPFS'],
+    image: '/images/projects/BC.webp', 
+    githubUrl: 'https://github.com/irfanyusuf13/Soundledger/tree/main',
+    role: 'Blockchain Developer',
+    date: 'June 2025'
+  },
+
   {
     title: 'Environment Monitoring System',
     description: 'Environmental monitoring system using ESP32 to measure and monitor air quality index and temperature in real time,',
@@ -23,7 +43,7 @@ export const projectsData: IProject[] = [
   {
     title: 'BikeGuard',
     description: 'Website Based Bicycle Security System with lock and qr code',
-    tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'C++', 'ESP32'],
+    tags: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'C++', 'ESP32'],
     image: '/images/projects/BikeGuard.webp', 
     githubUrl: 'https://github.com/irfanyusuf13/BikeGuardAsli',
     role: 'IoT Developer, Frontend Developer, Project Management', 
@@ -32,7 +52,7 @@ export const projectsData: IProject[] = [
   {
     title: 'LibCatalog',
     description: 'Create a full-stack library management system website using SERN stack.',
-    tags: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'PostgreSQL'],
+    tags: ['React.js', 'Tailwind CSS', 'Node.js', 'Express', 'PostgreSQL'],
     image: '/images/projects/LibCatalog.webp',
     githubUrl: 'https://github.com/SistemBasisData2024/LibCatalog',
     role: 'Backend Developer',
