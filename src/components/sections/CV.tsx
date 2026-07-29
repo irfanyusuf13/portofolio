@@ -1,5 +1,5 @@
 const CV_URL =
-  "https://drive.google.com/file/d/1CIAhVJQr6Yu0h24xeAC2sjbruQKGeJmw/view?usp=sharing";
+  "https://drive.google.com/file/d/10VY8zjNcQl4paJzrvHhShHGDMxrh0DQ5/view?usp=drive_link";
 
 export default function CVButton() {
   return (
